@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tool Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Tool Calculator</h1>
+      <form>
+        <label for="tool-price">Tool Price:</label>
+        <input type="number" id="tool-price" name="tool-price" required><br><br>
+        <label for="discount-percent">Discount Percent:</label>
+        <input type="number" id="discount-percent" name="discount-percent" required><br><br>
+        <label for="tax-percent">Tax Percent:</label>
+        <input type="number" id="tax-percent" name="tax-percent" required><br><br>
+        <input type="submit" value="Calculate">
+      </form>
+      <div class="results">
+        <p>Discount Amount: <span id="discount-amount"></span></p>
+        <p>Tax Amount: <span id="tax-amount"></span></p>
+        <p>Total Price: <span id="total-price"></span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
